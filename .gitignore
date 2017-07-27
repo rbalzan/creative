@@ -1,0 +1,76 @@
+#-----------------------------------------------
+# Operating System
+#-----------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+
+
+#-----------------------------------------------
+# Editor AND Git
+#-----------------------------------------------
+.git/
+.vscode/
+.project/
+.settings/
+*.clpprj
+
+
+
+#-----------------------------------------------
+# Otros
+#-----------------------------------------------
+*.tasks
+
+
+
+#-----------------------------------------------
+# Packages and libraries
+#-----------------------------------------------
+vendor/*
+
+
+
+#-----------------------------------------------
+# Packages and libraries
+#-----------------------------------------------
+application/settings.json
+
+# libs
+application/libs/*
+!application/libs/paginator
+!application/libs/captcha
+
+application/logs/*
+
+# temporal
+application/temporal/cache/*
+application/temporal/session/*
+application/temporal/templates_c/*
+
+# content
+public_html/content/uploads/*
+
+# assets
+public_html/assets/components/*
+public_html/assets/components/angular
+public_html/assets/components/bootstrap
+public_html/assets/components/extendmejs
+public_html/assets/components/font-awesome
+public_html/assets/components/jquery
+
+
+#-----------------------------------------------
+# API
+#-----------------------------------------------
+api/logs/*
+api/**/model/*
+api/**/views/*
+api/**/controllers/*
+!api/v1/controllers/indexController.php
+!api/v1/controllers/accountsController.php

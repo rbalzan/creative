@@ -1,0 +1,31 @@
+{
+  "name": "creative",
+  "authors": [
+    "Brayan Rincon <brayan262@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~3.2",
+    "angular": "1.6.5",
+    "bootstrap": "3.3.7",
+    "font-awesome": "*",
+    "select2": "4.0.3",
+    "datatable": "1.10",
+    "colorpicker":"latest",
+    "jquery.numeric": "*",
+    "daterangepicker": "latest",
+    "bootstrap-datepicker": "~1.7.1",
+    "is-loading":"2.0",
+    "extendmejs":"1.0.1"
+  }
+}

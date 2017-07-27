@@ -1,0 +1,20 @@
+{
+	"hash_key":"",
+	"public_html":"public_html",
+	"use_generator":false,
+	"use_ssl":false,
+	"session_handler": "file",
+	"environment":"development",
+	"email_contact":"info@mail.com",
+	"email_webmaster":"webmaster@mail.com",
+	"timezone":"america/caracas",
+	"default_lang":"es_ve",
+	"db_driver_database":"mysql",
+	"db_host":"localhost",
+	"db_database":"",
+	"db_user":"",
+	"db_password":"",
+	"db_port":"3306",
+	"db_charset":"utf8_general_ci",
+	"db_collate":"utf8"
+}

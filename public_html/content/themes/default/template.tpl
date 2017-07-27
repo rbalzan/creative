@@ -1,0 +1,1 @@
+{if strpos($_html , ".tpl") == true}{include file=$_html}{else}{$_html}{/if}

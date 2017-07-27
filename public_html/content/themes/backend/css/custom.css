@@ -1,0 +1,169 @@
+
+.toast-item p strong{
+	text-transform: uppercase;
+}
+
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+
+.sidebar-menu .treeview-menu > li > a {
+    padding: 8px 5px 8px 15px;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+.fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px !important;
+    direction: ltr;
+    cursor: pointer;
+}
+
+
+/*
+ * Page: Login & Register
+ * ----------------------
+ */
+.login-logo,
+.register-logo {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+.login-logo a,
+.register-logo a {
+  color: #444;
+}
+.login-page,
+.register-page {
+  background: #d2d6de;
+}
+.login-box,
+.register-box {
+  width: 360px;
+  margin: 1% auto;
+}
+@media (max-width: 768px) {
+  .login-box,
+  .register-box {
+    width: 90%;
+    margin-top: 20px;
+  }
+}
+.login-box-body,
+.register-box-body {
+  background: #fff;
+  padding: 20px;
+  border-top: 0;
+  color: #666;
+}
+.login-box-body .form-control-feedback,
+.register-box-body .form-control-feedback {
+  color: #777;
+}
+.login-box-msg,
+.register-box-msg {
+  margin: 0;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+.social-auth-links {
+  margin: 10px 0;
+}
+
+
+
+
+.label-purple {
+  background-color: #67169c !important;
+}
+.label-pink {
+  background-color: #d60793 !important;
+}
+.label-dark {
+  background-color: #565656 !important;
+}
+.label-blue {
+  background-color: #1651a9 !important;
+}
+.label-yellow {
+  background-color: #dae40a !important;
+}
+.label-plomo {
+  background-color: #59879b !important;
+}
+
+.has-feedback label ~ .form-control-feedback {
+    top: 35px;
+}
+
+
+
+table .btn {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+table thead th, 
+table thead td {
+    padding: 10px 18px;
+    border-bottom: 1px solid #b5b5b5 !important;
+    color:#999
+}
+
+.btn {
+  border-radius: 1px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+border: 1px solid rgba(212, 212, 212, 0.6);
+  height: 34px;
+}
+
+
+.has-error label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 3px;
+    font-weight: bold;
+    color: #bd3535;
+}
+
+
+
+

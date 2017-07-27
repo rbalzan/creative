@@ -1,0 +1,60 @@
+
+#tweet_scroll_place{
+	position: relative;
+	height: 120px;
+	overflow:hidden;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	top: 0;
+	fill: #171717;
+	background: #171717;}
+}
+
+.tweet_bird{
+	/*background: url(../img/twitter_bird.png) no-repeat 15px 13px;*/
+	display: none;
+}
+
+#tweet_scroll_place li{
+	padding: 22px 0;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	min-height: 100px;
+}
+
+
+#tweet_scroll_place li a{
+	color: #fff;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	font-size: 18px
+	}
+#tweet_scroll_place li a:hover{
+	color: #fff !important;
+}
+#tweet_scroll_place li img{
+	padding-right: 10px;
+	margin-top: -2px;
+	position: relative;
+	float: left;
+}
+.tweet_avatar{display: none;}
+.tweet_text{font-size: 16px;}
+.tweet_list{position: relative; left: 0px; padding-left: 0px}
+.tweet_list li{list-style: none !important; line-height: 18px}
+
+
+@media only screen and (max-width: 800px){	
+	#tweet_scroll_place li{
+		padding: 10px 0;
+		color: #fff;
+		height: 100px;
+	}
+	.tweet_list li{
+		list-style: none !important;
+		line-height: 18px
+	}
+}

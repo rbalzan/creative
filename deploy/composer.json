@@ -1,0 +1,20 @@
+{
+    "name": "organizacion/proyecyo",
+    "repositories": [{
+        "type": "package",
+        "package": {
+            "name": "megacreativo/creative",
+            "version": "1.0.0",
+            "type": "package",
+            "source": {
+                "type": "git",
+                "reference": "master",
+                "url": "https://gitlab.com/megacreativo/creative.git"
+            }
+        }
+    }],
+    "minimum-stability": "dev",
+    "require": {
+        "megacreativo/creative": "1.0.0"
+    }
+}

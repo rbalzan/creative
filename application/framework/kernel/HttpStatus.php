@@ -1,0 +1,47 @@
+<?php 
+
+abstract class HttpStatus
+{
+	const
+		HTTP_100 = array('status'=>100, 'statusText' => 'Continue'),
+		HTTP_101 = array('status'=>101, 'statusText' => 'Switching Protocols'),
+		HTTP_200 = array('status'=>200, 'statusText' => 'OK'),
+		HTTP_201 = array('status'=>201, 'statusText' => 'Created'),
+		HTTP_202 = array('status'=>202, 'statusText' => 'Accepted'),
+		HTTP_203 = array('status'=>203, 'statusText' => 'Non-Authorative Information'),
+		HTTP_204 = array('status'=>204, 'statusText' => 'No Content'),
+		HTTP_205 = array('status'=>205, 'statusText' => 'Reset Content'),
+		HTTP_206 = array('status'=>206, 'statusText' => 'Partial Content'),
+		HTTP_300 = array('status'=>300, 'statusText' => 'Multiple Choices'),
+		HTTP_301 = array('status'=>301, 'statusText' => 'Moved Permanently'),
+		HTTP_302 = array('status'=>302, 'statusText' => 'Found'),
+		HTTP_303 = array('status'=>303, 'statusText' => 'See Other'),
+		HTTP_304 = array('status'=>304, 'statusText' => 'Not Modified'),
+		HTTP_305 = array('status'=>305, 'statusText' => 'Use Proxy'),
+		HTTP_307 = array('status'=>307, 'statusText' => 'Temporary Redirect'),
+		HTTP_400 = array('status'=>400, 'statusText' => 'Bad Request'),
+		HTTP_401 = array('status'=>401, 'statusText' => 'Unauthorized'),
+		HTTP_402 = array('status'=>402, 'statusText' => 'Payment Required'),
+		HTTP_403 = array('status'=>403, 'statusText' => 'Forbidden'),
+		HTTP_404 = array('status'=>404, 'statusText' => 'Not Found'),
+		HTTP_405 = array('status'=>405, 'statusText' => 'Method Not Allowed'),
+		HTTP_406 = array('status'=>406, 'statusText' => 'Not Acceptable'),
+		HTTP_407 = array('status'=>407, 'statusText' => 'Proxy Authentication Required'),
+		HTTP_408 = array('status'=>408, 'statusText' => 'Request Timeout'),
+		HTTP_409 = array('status'=>409, 'statusText' => 'Conflict'),
+		HTTP_410 = array('status'=>410, 'statusText' => 'Gone'),
+		HTTP_411 = array('status'=>411, 'statusText' => 'Length Required'),
+		HTTP_412 = array('status'=>412, 'statusText' => 'Precondition Failed'),
+		HTTP_413 = array('status'=>413, 'statusText' => 'Request Entity Too Large'),
+		HTTP_414 = array('status'=>414, 'statusText' => 'Request-URI Too Long'),
+		HTTP_415 = array('status'=>415, 'statusText' => 'Unsupported Media Type'),
+		HTTP_416 = array('status'=>416, 'statusText' => 'Requested Range Not Satisfiable'),
+		HTTP_417 = array('status'=>417, 'statusText' => 'Expectation Failed'),
+		HTTP_500 = array('status'=>500, 'statusText' => 'Internal Server Error'),
+		HTTP_501 = array('status'=>501, 'statusText' => 'Not Implemented'),
+		HTTP_502 = array('status'=>502, 'statusText' => 'Bad Gateway'),
+		HTTP_503 = array('status'=>503, 'statusText' => 'Service Unavailable'),
+		HTTP_504 = array('status'=>504, 'statusText' => 'Gateway Timeout'),
+		HTTP_505 = array('status'=>505, 'statusText' => 'HTTP Version Not Supported');
+}
+?>

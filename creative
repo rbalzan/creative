@@ -1,0 +1,15 @@
+<?php
+    
+    define('CREATIVE_CLI_START', microtime(true));
+
+    define('DS', DIRECTORY_SEPARATOR);
+
+    define('PATH_ROOT', realpath(dirname(__FILE__)) . DS);
+
+    define('PATH_APP', PATH_ROOT . 'application' .DS);
+
+    define('PATH_FRAMEWORK', PATH_APP . 'framework' .DS);
+
+    $GLOBALS['CREATIVE']['CLI']['ARGS'] = $argv;
+    require '/application/framework/console/autoload.php';
+?>

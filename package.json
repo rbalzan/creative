@@ -1,0 +1,21 @@
+{
+  "name": "creative",
+  "version": "1.0.0",
+  "description": "Creative Framework",
+  "main": "index.js",
+  "repository": "https://gitlab.com/megacreativo/creative.git",
+  "author": "Brayan Rincon <brayan262@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.6.5",
+    "bootstrap": "3.3.7",
+    "font-awesome": "*",
+    "select2": "4.0.3",
+    "datatable": "1.10",
+    "colorpicker":"latest",
+    "jquery.numeric": "*",
+    "daterangepicker": "latest",
+    "bootstrap-datepicker": "~1.7.1",
+    "is-loading":"2.0"
+  }
+}

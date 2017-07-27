@@ -1,0 +1,20 @@
+########################## CREATIVE ##########################
+<VirtualHost *:80>
+    ServerAdmin webmaster@mail.com
+    DocumentRoot "PATH/public_html"
+    ServerName creative.dev
+    ServerAlias www.creative.dev
+    ErrorLog "logs/creative.dev-error.log"
+    CustomLog "logs/creative.dev-access.log" common
+</VirtualHost>
+
+Listen 0.0.0.0:7000
+Listen [::0]:7000
+<VirtualHost *:7000>
+    ServerAdmin webmaster@mail.com
+    DocumentRoot "PATH/public_html"
+    ServerName creative.dev
+    ServerAlias www.creative.dev
+    ErrorLog "logs/creative.dev-error.log"
+    CustomLog "logs/creative.dev-access.log" common
+</VirtualHost>

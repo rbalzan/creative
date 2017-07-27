@@ -1,0 +1,214 @@
+.toast-container {
+	width: 300px;
+	z-index: 9999999999;
+}
+
+
+* html .toast-container {
+	position: absolute;		
+}
+
+.toast-item {
+    height: auto;
+    background: rgba(0,0,0,0.9);
+    opacity:1;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #f5f5f5;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border: 1px solid rgba(0,0,0,1);
+    display: block;
+    position: relative;
+    margin: 0 0 12px 0;
+}
+
+.toast-item p {
+    text-align: left;
+    margin-left: 50px;
+    padding-top: 5px;
+    color: #fff
+}
+
+.toast-item-close {
+    width:22px;
+    height:22px;
+    position: absolute;
+    top:5px;
+    right:2px;
+    cursor: pointer;
+}
+.toast-item-close span {
+	font-size: 22px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0 1px 0 #fff;
+    font-family: inherit;
+}
+
+
+.toast-item-image {
+    width:35px;
+    height: 35px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    float:left;
+    font-size: 34px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+.toast-item-image-default {
+	display: inline-block;
+    font: normal normal normal 25px/1 FontAwesome;
+    font-size: 32px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.toast-item-image-default:before {
+    content: "\f27b";
+}
+
+
+
+
+.toast-item-image-success {
+	display: inline-block;
+    font: normal normal normal 25px/1 FontAwesome;
+    font-size: 32px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.toast-item-image-success:before {
+    content: "\f00c";
+}
+
+
+
+
+.toast-item-image-warning {
+	display: inline-block;
+    font: normal normal normal 25px/1 FontAwesome;
+    font-size: 32px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.toast-item-image-warning:before {
+    content: "\f071";
+}
+
+
+
+.toast-item-image-error {
+	display: inline-block;
+    font: normal normal normal 25px/1 FontAwesome;
+    font-size: 32px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.toast-item-image-error:before {
+    content: "\f06a";
+}
+
+
+
+.toast-item-image-info {
+	display: inline-block;
+    font: normal normal normal 25px/1 FontAwesome;
+    font-size: 32px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.toast-item-image-info:before {
+    content: "\f059";
+}
+
+
+/** 
+ * toast types 
+ * 
+ * pattern: toast-type-[value]
+ * where 'value' is the real value of the plugin option 'type'
+ * 
+ */
+.toast-type-notice {
+    color: white;    
+}
+
+
+
+.toast-type-default {
+	background-color: rgba(10,10,10,0.9);
+    color: white;
+    border-color: #4b5354;
+}
+
+.toast-type-warning {
+	background-color: rgba(240, 173, 78,0.9);
+    color: white;
+    border-color: rgba(238, 162, 54, 0.9);
+}
+
+.toast-type-error {
+	background-color: rgba(217, 83, 79, 0.9);
+    color: white;
+    border-color:rgba(212, 63, 58,0.9);
+}
+
+.toast-type-success {
+    background-color: rgba(92, 184, 92, 0.9);
+    color: white;
+    border-color: rgba(76, 174, 76, 0.9);
+}
+
+.toast-type-info {
+    background-color: rgba(91, 192, 222, 0.9);
+    color: white;
+    border-color: rgba(91, 192, 222, 1);
+}
+
+
+/** 
+ * positions 
+ * 
+ * pattern: toast-position-[value]
+ * where 'value' is the real value of the plugin option 'position'
+ * 
+ */
+.toast-position-top-right {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.toast-position-center {
+    position: fixed;
+    left: 50%;
+    margin-left: -140px;
+    margin-top: -40px;
+    top: 50%;
+}
+
+.toast-position-middle-bottom {
+    position: fixed ;
+    left: 50%;
+    margin-left: -140px;
+    margin-top: -40px;
+    top: 75%;
+}
+
+.toast-position-bottom-right {
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+}
