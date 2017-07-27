@@ -1,12 +1,11 @@
-# Localización
+# Location
 
-## Introducción
+## Introduction
 
-Creative **`Lang`** proporciona una manera conveniente de recuperar cadenas de texto en varios idiomas, lo que le permite soportar fácilmente varios idiomas dentro de su aplicación.
+Creative **`Lang`** Provides a convenient way to retrieve text strings in multiple languages, allowing you to easily support multiple languages within your application.
 
-## Archivos de idioma
-
-Las cadenas de idiomas se almacenan en archivos dentro del directorio **`application/langs`**. Dentro de este directorio debe haber un subdirectorio para cada idioma soportado por la aplicación.
+## Language files
+Language strings are stored in files within the directory **`application/langs`**. Within this directory there should be a subdirectory for each language supported by the application.
 
 ```
 /application
@@ -17,9 +16,9 @@ Las cadenas de idiomas se almacenan en archivos dentro del directorio **`applica
             messages.php
 ```
 
-## Ejemplo del archivo de idioma
+## Example of language file
 
-Los archivos de idioma simplemente devuelven una matriz de cadenas con clave. Por ejemplo:
+Language files simply return an array of strings with a key. For example:
 
 ```php
 <?php
@@ -29,9 +28,9 @@ return [
 ];
 ```
 
-## Cambiar el idioma predeterminado
+## Change default language
 
-El idioma predeterminado para su aplicación se almacena en el archivo de configuración **`application/config/app.php`**.
+The default language for your application is stored in the configuration file **`application/config/app.php`**.
 
 ```php
 <?php
@@ -42,32 +41,33 @@ return (object) [
 
 ```
 
-## Uso básico
+## Basic Usage
 
-### Recuperación de líneas de un archivo de idioma
+### Retrieving lines from a language file
 
-El primer segmento de la cadena pasada al método get es el nombre del archivo de idioma y el segundo es el nombre de la línea que se debe recuperar.
+The first segment of the string passed to the get method is the name of the language file and the second is the name of the line to retrieve.
 
 ```php
 echo Lang::get ('messages.welcome');
 ```
-### Reemplazos en líneas
 
-También puede definir patrones para ser reemplazados en las líneas de su idioma:
+### Line Replacements
+
+You can also define patterns to be replaced on the lines of your language:
 
 ```php
 'welcome' => 'Welcome, :name',
 ```
 
-Luego, pase un segundo argumento de reemplazos al método Lang::get:
+Then pass a second argument from method overrides Lang::get:
 
 ```php
 echo Lang::get('messages.welcome', ['name' => 'Matias']);
 ```
 
-## Pluralización
+## Pluralization
 
-La pluralización es un problema complejo, ya que diferentes lenguajes tienen una variedad de reglas complejas para la pluralización. Puede administrar fácilmente esto en sus archivos de idioma. Mediante el uso de un carácter "*pipe*", puede separar las formas singular y plural de una cadena:
+Pluralization is a complex problem, since different languages have a variety of complex rules for pluralization. You can easily manage this in your language files. By using a character "*pipe*", Can separate the singular and plural forms of a chain:
 
 ```php
 'apples' => 'There is one apple|There are many apples|There are some apples',
@@ -76,12 +76,12 @@ La pluralización es un problema complejo, ya que diferentes lenguajes tienen un
 ```php
 echo Lang::get('messages.apples', 2);
 ```
-El segundo parametro (2), indica cual de las cadenas será seleccionada. El resultado del ejemplo sería:
+The second parameter (2), Indicates which of the strings will be selected. The result of the example would be:
 ```
 There are some apples
 ```
 
-Otra forma es usar un patron para ser reemplazado
+Another way is to use a pattern to be replaced
 
 ```php
 'apples' => 'There are {0} apples',
@@ -90,7 +90,7 @@ Otra forma es usar un patron para ser reemplazado
 ```php
 echo Lang::get('messages.apples', 100);
 ```
-El segundo parametro (100), será el número por el cual será reemplazado el patron *{0}*. El resultado del ejemplo sería:
+The second parameter (100), Will be the number by which the pattern will be replaced *{0}*. The result of the example would be:
 ```
 There are 100 apples
 ```
